@@ -4,8 +4,8 @@
  * 该文件为脚本自动生成文件，请勿随意修改。如需修改请联系 PMC
  * */
 
-import { SizeEnum } from '../common/common';
 import { LoadingProps } from '../loading/index';
+import { SizeEnum } from '../common/common';
 
 export interface TdButtonProps {
   /**
@@ -31,7 +31,7 @@ export interface TdButtonProps {
     value?: any;
   };
   /**
-   * 是否禁用按钮
+   * 禁用状态
    * @default false
    */
   disabled?: {
@@ -99,6 +99,14 @@ export interface TdButtonProps {
   size?: {
     type: StringConstructor;
     value?: SizeEnum;
+  };
+  /**
+   * 自定义组件样式
+   * @default ''
+   */
+  style?: {
+    type: StringConstructor;
+    value?: string;
   };
   /**
    * 组件风格，依次为品牌色、危险色

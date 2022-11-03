@@ -7,7 +7,12 @@
 
 import { TdIconProps } from './type';
 const props: TdIconProps = {
-  /** 图标自定义样式 */
+  /** 自定义组件样式 */
+  style: {
+    type: String,
+    value: '',
+  },
+  /** 自定义样式（即将废弃，推荐使用 `style` ） */
   customStyle: {
     type: String,
     value: '',

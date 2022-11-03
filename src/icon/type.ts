@@ -7,7 +7,15 @@
 
 export interface TdIconProps {
   /**
-   * 图标自定义样式
+   * 自定义组件样式
+   * @default ''
+   */
+  style?: {
+    type: StringConstructor;
+    value?: string;
+  };
+  /**
+   * 自定义样式（即将废弃，推荐使用 `style` ）
    */
   customStyle?: {
     type: StringConstructor;

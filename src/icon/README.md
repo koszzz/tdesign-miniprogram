@@ -79,7 +79,8 @@ isComponent: true
 | size        | String | inherit   | N    | 图标大小, 如 `20`, `20px`, `48rpx`, 默认单位是 `px` |
 | color       | String | initial   | N    | 图标颜色                                                          |
 | prefix      | String | -         | N    | 自定义图标前缀                                                    |
-| customStyle | String | -         | N    | 自定义样式                                                        |
+| style | String | - | 自定义组件样式 | N
+| customStyle | String | -         | N    | 自定义样式（即将废弃，推荐使用 `style` ）|
 | external-classes | Array | - | 组件类名，分别用于设置 组件外层元素、图片图标、基础图标等元素类名。`['t-class']` | N
 
 #### Events

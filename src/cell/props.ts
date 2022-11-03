@@ -2,7 +2,6 @@
 
 /**
  * 该文件为脚本自动生成文件，请勿随意修改。如需修改请联系 PMC
- * updated at 2022-01-11 17:36:12
  * */
 
 import { TdCellProps } from './type';
@@ -59,6 +58,11 @@ const props: TdCellProps = {
   /** 最右侧图标 */
   rightIcon: {
     type: String,
+  },
+  /** 自定义组件样式 */
+  style: {
+    type: String,
+    value: '',
   },
   /** 标题 */
   title: {

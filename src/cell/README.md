@@ -47,6 +47,7 @@ left-icon | String / Slot | - | 左侧图标，出现在单元格标题的左侧
 note | String / Slot | - | 和标题同行的说明文字 | N
 required | Boolean | false | 是否显示表单必填星号 | N
 right-icon | String / Slot | - | 最右侧图标 | N
+style | String | - | 自定义组件样式 | N
 title | String / Slot | - | 标题 | N
 url | String | - | 点击后跳转链接地址。如果值为空，则表示不需要跳转 | N
 

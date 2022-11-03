@@ -25,4 +25,20 @@ export default class Divider extends SuperComponent {
     prefix,
     classPrefix: name,
   };
+
+  observers = {
+    lineColor() {
+      this.setDividerStyle();
+    },
+  };
+
+  methods = {
+    setDividerStyle() {
+      const { lineColor, style } = this.properties;
+      const dividerStyle = `${lineColor ? `border-color: ${lineColor};` : ''}${style ? `${style}` : ''}`;
+      this.setData({
+        dividerStyle,
+      });
+    },
+  };
 }

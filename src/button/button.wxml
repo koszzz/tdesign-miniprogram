@@ -1,4 +1,5 @@
 <button
+  style="{{ style }}"
   data-custom="{{ customDataset }}"
   class="{{className}} {{prefix}}-class"
   form-type="{{type}}"
