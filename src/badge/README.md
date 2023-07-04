@@ -1,34 +1,4 @@
----
-title: Badge 徽标
-description: 用于告知用户，该区域的状态变化或者待处理任务的数量。
-spline: data
-isComponent: true
----
-
-<span class="coverages-badge" style="margin-right: 10px"><img src="https://img.shields.io/badge/coverages%3A%20lines-100%25-blue" /></span><span class="coverages-badge" style="margin-right: 10px"><img src="https://img.shields.io/badge/coverages%3A%20functions-100%25-blue" /></span><span class="coverages-badge" style="margin-right: 10px"><img src="https://img.shields.io/badge/coverages%3A%20statements-100%25-blue" /></span><span class="coverages-badge" style="margin-right: 10px"><img src="https://img.shields.io/badge/coverages%3A%20branches-100%25-blue" /></span>
-## 引入
-
-全局引入，在 miniprogram 根目录下的`app.json`中配置，局部引入，在需要引入的页面或组件的`index.json`中配置。
-
-```json
-"usingComponents": {
-  "t-badge": "tdesign-miniprogram/badge/badge"
-}
-```
-
-## 代码演示
-
-### 组件类型
-
-{{ base }}
-
-### 组件样式
-
-{{ theme }}
-
-### 组件尺寸
-
-{{ size }}
+:: BASE_DOC ::
 
 ## API
 ### Badge Props
