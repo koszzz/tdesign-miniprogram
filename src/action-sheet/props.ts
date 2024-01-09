@@ -14,7 +14,7 @@ const props: TdActionSheetProps = {
   /** 设置取消按钮的文本 */
   cancelText: {
     type: String,
-    value: '取消',
+    value: '',
   },
   /** 设置每页展示菜单的数量，仅当 type=grid 时有效 */
   count: {
@@ -29,6 +29,7 @@ const props: TdActionSheetProps = {
   /** 菜单项 */
   items: {
     type: Array,
+    required: true,
   },
   /** 是否显示取消按钮 */
   showCancel: {
@@ -44,21 +45,13 @@ const props: TdActionSheetProps = {
   visible: {
     type: Boolean,
     value: null,
+    required: true,
   },
   /** 显示与隐藏，非受控属性 */
   defaultVisible: {
     type: Boolean,
     value: false,
-  },
-  /** 是否显示遮罩层 */
-  showOverlay: {
-    type: Boolean,
-    value: true,
-  },
-  /** popupProps透传 */
-  popupProps: {
-    type: Object,
-    value: {},
+    required: true,
   },
 };
 
