@@ -21,14 +21,6 @@ export interface TdAvatarGroupProps {
     value?: string;
   };
   /**
-   * 自定义组件样式
-   * @default ''
-   */
-  style?: {
-    type: StringConstructor;
-    value?: string;
-  };
-  /**
    * 组件类名，用于设置组件外层元素类名
    */
   externalClasses?: {

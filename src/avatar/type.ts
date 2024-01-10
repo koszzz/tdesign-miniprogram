@@ -5,6 +5,7 @@
  * */
 
 import { BadgeProps } from '../badge/index';
+import { ImageProps } from '../image/index';
 
 export interface TdAvatarProps {
   /**
@@ -23,20 +24,12 @@ export interface TdAvatarProps {
     value?: BadgeProps;
   };
   /**
-   * 是否显示外边框
+   * 已废弃。是否显示外边框
    * @default false
    */
   bordered?: {
     type: BooleanConstructor;
     value?: boolean;
-  };
-  /**
-   * 自定义组件样式
-   * @default ''
-   */
-  style?: {
-    type: StringConstructor;
-    value?: string;
   };
   /**
    * 组件类名，用于设置组件外层元素类名
@@ -73,7 +66,7 @@ export interface TdAvatarProps {
    */
   imageProps?: {
     type: ObjectConstructor;
-    value?: object;
+    value?: ImageProps;
   };
   /**
    * 形状
@@ -84,7 +77,7 @@ export interface TdAvatarProps {
     value?: ShapeEnum;
   };
   /**
-   * 尺寸，示例值：small/medium/large/24px/38px 等
+   * 尺寸，示例值：small/medium/large/24px/38px 等。优先级高于 AvatarGroup.size 。Avatar 单独存在时，默认值为 medium。如果父组件存在 AvatarGroup，默认值便由 AvatarGroup.size 决定
    * @default medium
    */
   size?: {
