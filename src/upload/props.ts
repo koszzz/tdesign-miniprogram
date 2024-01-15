@@ -19,11 +19,6 @@ const props: TdUploadProps = {
   config: {
     type: Object,
   },
-  /** 是否禁用组件 */
-  disabled: {
-    type: Boolean,
-    value: false,
-  },
   /** 已上传文件列表 */
   files: {
     type: Array,
@@ -68,6 +63,11 @@ const props: TdUploadProps = {
   source: {
     type: String,
     value: 'media',
+  },
+  /** 自定义组件样式 */
+  style: {
+    type: String,
+    value: '',
   },
 };
 
